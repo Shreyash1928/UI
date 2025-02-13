@@ -1,10 +1,9 @@
 {
-  "homepage": "https://Shreyash1928.github.io/<your-repo-name>",
+  "homepage": "https://Shreyash1928.github.io/Infinx",
   "devDependencies": {
     "gh-pages": "^6.3.0"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d ."
   }
 }
