@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - INFINX</title>
+    <link rel="stylesheet" href="style.css"> <!-- Same CSS as the navbar -->
+    <link rel="stylesheet" href="contact.css"> <!-- Custom CSS for Contact page -->
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="infin">INF</span><span class="i">I</span><span class="n">N</span><span class="x">X</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="Login.html" class="login-btn">Log In</a>
+            <a href="signup.html" class="signup-btn">Sign Up</a>
+        </div>
+        <div class="burger-menu" id="burger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <!-- Main content for Contact page -->
+    <section class="contact-section">
+        <h1>Contact Us</h1>
+        <p>If you have any questions or inquiries, feel free to reach out to us!</p>
+
+        <h2>Our Location</h2>
+        <p>123 Innovation Drive, Suite 100<br>City Name, State, Zip Code</p>
+
+        <h2>Email Us</h2>
+        <p><a href="mailto:info@infinx.com">info@infinx.com</a></p>
+
+        <h2>Call Us</h2>
+        <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+
+        <h2>Follow Us</h2>
+        <p>
+            <a href="#" target="_blank">Facebook</a> |
+            <a href="#" target="_blank">Twitter</a> |
+            <a href="#" target="_blank">LinkedIn</a>
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Copyright &copy; Shreyash Wadkar, 2024. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const burgerMenu = document.getElementById('burger-menu');
+        const navLinks = document.querySelector('.nav-links');
+        burgerMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

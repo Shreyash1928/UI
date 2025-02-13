@@ -1,0 +1,49 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background */
+}
+
+/* Contact Section Styles */
+.contact-section {
+    flex: 1; /* This allows the content to grow and take up available space */
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h1 {
+    font-size: 36px;
+    color: #002f6c; /* Dark blue for headings */
+    margin-bottom: 20px;
+}
+
+.contact-section h2 {
+    font-size: 24px;
+    color: #002f6c; /* Dark blue for subheadings */
+    margin-top: 20px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    color: #333; /* Dark text color */
+    margin-top: 10px;
+}
+
+.contact-section a {
+    color: #43b02a; /* Green for links */
+    text-decoration: none;
+}
+
+.contact-section a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

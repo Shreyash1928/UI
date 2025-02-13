@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - INFINX</title>
+    <link rel="stylesheet" href="style.css"> <!-- Same CSS as the navbar -->
+    <link rel="stylesheet" href="home.css"> <!-- Custom CSS for Home page -->
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="infin">INF</span><span class="i">I</span><span class="n">N</span><span class="x">X</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="Login.html" class="login-btn">Log In</a>
+            <a href="signup.html" class="signup-btn">Sign Up</a>
+        </div>
+        <div class="burger-menu" id="burger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <!-- Main content for Home page -->
+    <section class="welcome-section">
+        <h1>Welcome to INFINX</h1>
+        <p>Your gateway to innovation and technology!</p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <h2>Our Services</h2>
+        <div class="card-container">
+            <!-- Repeat this block for 12 cards -->
+            <div class="card">
+                <h3>Service 1</h3>
+                <p>Brief description of Service 1.</p>
+            </div>
+            <div class="card">
+                <h3>Service 2</h3>
+                <p>Brief description of Service 2.</p>
+            </div>
+            <div class="card">
+                <h3>Service 3</h3>
+                <p>Brief description of Service 3.</p>
+            </div>
+            <div class="card">
+                <h3>Service 4</h3>
+                <p>Brief description of Service 4.</p>
+            </div>
+            <div class="card">
+                <h3>Service 5</h3>
+                <p>Brief description of Service 5.</p>
+            </div>
+            <div class="card">
+                <h3>Service 6</h3>
+                <p>Brief description of Service 6.</p>
+            </div>
+            <div class="card">
+                <h3>Service 7</h3>
+                <p>Brief description of Service 7.</p>
+            </div>
+            <div class="card">
+                <h3>Service 8</h3>
+                <p>Brief description of Service 8.</p>
+            </div>
+            <div class="card">
+                <h3>Service 9</h3>
+                <p>Brief description of Service 9.</p>
+            </div>
+            <div class="card">
+                <h3>Service 10</h3>
+                <p>Brief description of Service 10.</p>
+            </div>
+            <div class="card">
+                <h3>Service 11</h3>
+                <p>Brief description of Service 11.</p>
+            </div>
+            <div class="card">
+                <h3>Service 12</h3>
+                <p>Brief description of Service 12.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Copyright &copy; Shreyash Wadkar, 2024. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const burgerMenu = document.getElementById('burger-menu');
+        const navLinks = document.querySelector('.nav-links');
+        burgerMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

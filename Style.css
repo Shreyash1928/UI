@@ -1,0 +1,194 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002f6c; /* Dark blue from the logo for the navbar */
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Make sure the navbar is above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 3px; /* Adds space for underline effect */
+}
+
+.nav-links a:hover {
+    color: #43b02a; /* Green (same as the X) for hover effect */
+    border-bottom: 2px solid #43b02a; /* Underline in green on hover */
+}
+
+/* Authentication buttons (Log In, Sign Up) */
+.auth-buttons {
+    display: flex;
+}
+
+.auth-buttons a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 15px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.auth-buttons .login-btn {
+    background-color: #0f5296; /* Use lighter shade of blue for Log In button */
+}
+
+.auth-buttons .login-btn:hover {
+    background-color: #43b02a; /* Green hover for Log In */
+    color: #fff;
+}
+
+.auth-buttons .signup-btn {
+    background-color: #43b02a; /* Green for Sign Up button */
+    color: #fff;
+}
+
+.auth-buttons .signup-btn:hover {
+    background-color: #002f6c; /* Dark blue hover for Sign Up */
+    border-color: #43b02a;
+    color: #fff;
+}
+
+/* Logo styling */
+.logo {
+    font-size: 60px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo .infin {
+    background: linear-gradient(90deg, #0054a6, #0f70c9);
+    
+    /* Vendor prefixes for background-clip */
+    -webkit-background-clip: text;  /* For Chrome, Safari, and Opera */
+    -moz-background-clip: text;     /* For older versions of Firefox */
+    background-clip: text;          /* Standard */
+    
+    -webkit-text-fill-color: transparent; /* Makes the text fill transparent */
+    opacity: 0.9; /* Slight opacity to make it more visible */
+}
+
+.logo .i {
+    color: #99ff99; /* Light green for I */
+}
+
+.logo .n {
+    color: #66cc66; /* Medium green for N */
+}
+
+.logo .x {
+    color: #43b02a; /* Darker green for X */
+}
+
+/* Burger menu for mobile */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger-menu .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        background-color: #002f6c; /* Dark blue for mobile menu background */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .nav-links.open {
+        transform: translateX(0);
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .auth-buttons {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+}
+
+/* About Section Styles */
+.about-section {
+    flex: 1; /* This allows the content to grow and take up available space */
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styling */
+.footer {
+    background-color: #002f6c; /* Dark blue footer */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* Ensures footer is at the bottom of the page */
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #43b02a; /* Green text for copyright */
+}

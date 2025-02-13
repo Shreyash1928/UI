@@ -1,0 +1,31 @@
+/* General page styling for About Us */
+.about-section {
+    padding: 50px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.about-section h1 {
+    font-size: 40px;
+    color: #002f6c; /* Dark blue color for heading */
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    color: #333; /* Neutral gray for paragraph text */
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto; /* Center align the paragraph */
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .about-section h1 {
+        font-size: 30px;
+    }
+
+    .about-section p {
+        font-size: 16px;
+    }
+}
